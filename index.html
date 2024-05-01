@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CardVamp</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="../image/logo.png" type="image/x-icon">
+<link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/chart.js/chart.umd.js"></script>
+  <script src="assets/vendor/echarts/echarts.min.js"></script>
+  <script src="assets/vendor/quill/quill.min.js"></script>
+  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  </head>
+  <body>
+    <section>
+        <!-- ======= Header ======= -->
+   <header id="header" class="header fixed-top d-flex align-items-center head">
+
+    <div class="d-flex align-items-center justify-content-between">
+     <img src="card.png" class='img' alt="">
+      <h4 class="mont"> <b>CARDVAMP</b></h4>
+      </a>
+      
+    </div><!-- End Logo -->
+    <!--  -->
+    <nav class="header-nav ms-auto">
+        <ul class="d-flex align-items-center">
+  
+          <li class="nav-item dropdown verify d-none d-lg-block ">
+  
+            <a class="nav-link niger nav-icon" href="#" data-bs-toggle="dropdown">
+            <img src="verify.png" width="30" height="30" alt="">  
+          </a><!-- End Notification Icon -->
+          
+        </a><!-- End Notification Icon -->
+  <b class="text-light" > 
+  Verified
+  </b>
+           
+  
+          </li><!-- End Notification Nav -->
+          <li class="nav-item dropdown">
+  
+            <a class="nav-link niger nav-icon" href="#" data-bs-toggle="dropdown">
+            <img src="nigeria.png" width="30" height="30" alt="">           
+            </a><!-- End Notification Icon -->
+              
+            </a><!-- End Notification Icon -->
+            </li><!-- End Notification Nav -->
+        </ul>
+      </nav><!-- End Icons Navigation -->
+  
+    </header><!-- End Header -->
+
+    </section>
+    <!-- pre loader -->
+
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- main page -->
+    <main id="main" class="main">
+
+        <div class="pagetitle" style="margin:left">
+          <h1 class="ment" style="color: darkblue;"></h1>
+          <nav>             
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="dashboard.html" class=""style="color: darkblue;">Home</a></li>
+            </ol>
+          </nav>
+        </div><!-- End Page Title -->
+       
+        <div class="alert alert-success alert-dismissible" >
+    
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        <img src="welcome.png" width="100">  <strong style="font-size:25px"> &#128522;</strong>
+        <br> <p class="text-center"> <b>We are happy to see you today 😀 🌟 🚀</b></p>
+      </div>
+    
+                  
+    <section class="py-4 gy-4">
+          <div class="container">
+    <div class="card crypto">
+      <div class="card-body">
+        <div id= "balance">
+        <!-- Display the balance on the home page -->
+    
+        <div id="balance" class="accountBalance">Balance: ₦<span id="balanceAmount">0.00</span></div>
+        <p class="exchange">
+    
+        <div class="icons py-4">
+    
+        </div>
+      </div>
+    </div>
+          </div>
+    </section>
+    <section class="py-4 gy-4 sec">
+    <!-- Button trigger modal -->
+    <div class="container text-center">
+    <div class="row">
+    <div class="col">
+<button type="button" class="atmopen" data-toggle="modal" data-target="#atmModal">
+  ATM details
+</button>
+</div>
+</div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="atmModal" tabindex="-1" role="dialog" aria-labelledby="atmModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div id="modal-content" class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="atmModalLabel">ATM Form</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        
+      </div>
+      <div class="modal-body">
+        <!-- ATM Form Content -->
+        <div id="card-container">
+          <div id="card" class="card-face front">
+            <h2>Enter ATM Card Details</h2>
+            <form id="atmForm">
+              <input
+                type="text"
+                id="cardNumber"
+                placeholder="Card Number"
+                maxlength="16"
+                required
+              />
+              <input
+                type="text"
+                id="expiryDate"
+                placeholder="Expiry Date (MM/YY)"
+                maxlength="5"
+                required
+              />
+              <input
+                type="text"
+                id="cvv"
+                placeholder="CVV"
+                maxlength="3"
+                required
+              />
+              <input type="number" id="amount" placeholder="Amount" required />
+              <button
+                class="buttonn"
+                type="button"
+                onclick="submitForm(); addBalance(document.getElementById('amount').value)"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+          <div id="successModal" class="modall">
+            <p>Successful!</p>
+          </div>
+          <div id="errorModal" class="modall">
+            <p>
+              Error: Please fill in all details correctly.<br />
+              <i class="fa-solid fa-triangle-exclamation"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Transfer Form -->
+<section class="py-4 gy-4 sec">
+  <!-- Button trigger modal -->
+  <div class="container text-center">
+  <div class="row">
+  <div class="col tup">
+<button type="button" class="atmopen" data-toggle="modal" data-target="#transferModal">
+WITHDRAW
+</button>
+</div>
+</div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="transferModal" tabindex="-1" role="dialog" aria-labelledby="transferModalLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <div id="modal-content" class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="transferModalLabel">Transfer Form</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      
+    </div>
+    <div class="modal-body">
+      <!-- Transfer Form Content -->
+      <div id="card-container">
+        <div id="card" class="card-face front">
+          <h2>Transfer Details</h2>
+          <form id="transferForm">
+            <div class="search-icon">
+              <input class="input"
+                type="text"
+                id="accountNumber"
+                placeholder="Account Number "
+                required
+                />
+                
+            </div>
+            <select class="input" id="bank" required>
+              <option value="" disabled selected>Select Bank</option>
+              <option value="zenith">Zenith Bank</option>
+              <option value="firstBank">First Bank</option>
+              <option value="palmpay">Palmpay</option>
+              <option value="opay">Opay</option>
+              <option value="access">Access Bank</option>
+              <option value="kuda">Kuda Bank</option>
+              <!-- Add more banks as needed -->
+            </select>
+            <button class="smo" type="button" onclick="handleSearch()">
+              <i class="fas fa-search "></i>
+          </button>
+          <div id="searchResult" class="sweety"></div>
+
+            <label for="amount"></label>
+            <input class="input" type="number" id="amountt" placeholder="₦" value="₦" required />
+            <button class="buttonnn" type="button" onclick="submittTransfer()">Transfer</button>
+          </form> 
+        </div>
+      
+  
+      <div id="successsModal" class="modalll">
+        <p>Transfer Successful!</p>
+      </div>
+  
+      <div id="errorrModal" class="modalll">
+        <p>Error: Please fill in all details correctly.</p>
+      </div>
+  
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+<!-- Bootstrap JS and Popper.js (required for Bootstrap) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+<script src="main.js"></script>
+
+
+  </body>
+</html>

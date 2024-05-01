@@ -1,0 +1,474 @@
+:root {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #f7f7f7;
+  color: #444444;
+  animation: colorChange 4s infinite alternate;
+}
+@keyframes colorChange {
+  from {
+    background-color: #e7d2d2;
+  }
+  to {
+    background-color: darksalmon;
+  }
+}
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Nunito", sans-serif;
+}
+/*--------------------------------------------------------------
+  # Main
+  --------------------------------------------------------------*/
+  #main {
+    margin-top: 60px;
+    padding: 20px 30px;
+    transition: all 0.3s;
+  }
+  #prime{
+    margin-top: 60px;
+    padding: 20px 30px;
+    transition: all 0.3s;
+    
+  }
+  
+  
+  @media (max-width: 1199px) {
+    #main {
+      padding: 20px;
+    }
+  }
+  
+  /*--------------------------------------------------------------
+  # Page Title
+  --------------------------------------------------------------*/
+  .pagetitle {
+    margin-bottom: 10px;
+  }
+  
+  .pagetitle h1 {
+    font-size: 24px;
+    margin-bottom: 0;
+    font-weight: 600;
+    color:  #012970;
+  }
+  
+  .simi{
+    background: #012970;
+    color:white;
+    height: 600px;
+  }
+  .simi,.card-body{
+    color:white;
+  }
+  
+  .funds{
+    color:white;
+  }
+  
+  .input{
+    margin-top: 30px;
+  }
+  
+  .cont{
+    z-index: 1;
+   position: relative;
+   width: 20%;
+   height: 50px;
+   top: 15px;
+    border: 1px solid;
+    border-radius:50px;
+    color: white;
+    background-color: darkblue;
+  }
+  .cont:hover{
+    background-color: #025d6b;
+    color: white;
+    border: 1px solid;
+  }
+  .atmopen{
+    box-shadow: 8 8 black;
+    padding: 25px;
+    margin: 10px;
+    background-color: darksalmon;
+    border-radius: 10px;
+  }
+  .atmopen:hover{
+    background-color: rgb(238, 106, 62);
+  }
+  
+  .type{
+    width: 50%;
+  }
+  
+  hr{
+    width: 100%;
+    color: white;
+  }
+  
+  @media screen and (max-width: 800px){
+  .cont .atmopen{
+    position: relative;
+   width: 40%;
+   height: 50px;
+  }
+  }
+  @media screen and (max-width: 667px){
+  .cont .atmopen{
+    position: relative;
+   width: 50%;
+   height: 50px;
+  }
+  }
+
+
+
+  /* Breadcrumbs */
+  .breadcrumb {
+    font-size: 14px;
+    font-family: "Nunito", sans-serif;
+    color: darkblue;
+    font-weight: 600;
+  }
+  
+  .breadcrumb a {
+    color: rgb(4, 4, 36);
+    transition: 0.3s;
+  }
+  
+  .breadcrumb a:hover {
+    color: #51678f;
+  }
+  
+  .breadcrumb .breadcrumb-item::before {
+    color: rgb(4, 4, 36);
+  }
+  
+  .breadcrumb .active {
+    color: #51678f;
+    font-weight: 600;
+  }
+  
+
+/* header style */
+section .head{
+    background-image: linear-gradient(darksalmon,rgb(24, 24, 50)); 
+  }
+    .verify{
+      position: relative;
+      right: 30px;
+    }
+    .mont{
+      text-decoration: none;
+    }
+    .img{
+      width: 60px;
+      height: 70% !important;
+    }
+
+/* main css */
+      /* Styles for the pre-loader */
+      #preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+
+    .spinner {
+        width: 70px; /* Adjust the size of the spinner */
+        height: 70px;
+        border: 8px solid rgba(0, 0, 0, 0.1);
+        border-top: 8px solid darksalmon; /* Change the color of the spinner */
+        border-radius: 45%;
+        animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+
+
+.crypto{
+background-image: linear-gradient(darksalmon,rgb(12, 2, 5)); 
+height: 100px;
+}
+.exchange{
+text-align: center;
+
+}
+
+ul{
+list-style-type: none;    
+color: #bcb7b7;
+font-weight: bold;
+}
+@media screen and (max-width: 900px){
+.fvck{
+  margin-top: 100px;
+}
+.group{
+width: 150%;
+background-color: green;
+
+}
+.group-text{
+color: white;
+font-weight:bolder;
+margin: 20px;
+}
+
+}
+@media screen and (max-width: 600px){
+.group{
+width: 500px;
+background-color: green;
+position: relative;
+left: 50px;
+bottom: 50px;
+
+}
+.group-text{
+color: white;
+font-weight:bolder;
+margin: 20px;
+}
+
+}
+.meit{
+width: 30%;
+height: 50px;
+margin: auto;
+
+}
+.phone-link{
+text-decoration: underline;
+color: blue;
+}
+.group{
+width: 80%;
+background-color: green;
+}
+.group-text{
+color: white;
+font-weight:bolder;
+margin: 20px;
+}
+.trans{
+position: relative;
+bottom: 70px;
+text-align: right;
+
+}
+.trans a{
+color: white;
+}
+
+/* end */
+/* flex container */
+.flex-container {
+    display: flex;
+  
+  }
+  .image{
+  position: relative;
+  left: 100px;
+  top: 50px;
+  }
+  .tem{
+    width: 68%;
+    height: 100%;
+    float:left;
+    background-image: linear-gradient(darksalmon,rgb(12, 7, 5)); 
+  
+  }
+  .mages{
+    width: 50px;
+    height: 50px;
+    margin: auto;
+  }
+  .sec{
+    width: 80%;
+    margin: auto;
+    position: relative;
+    left: 80px;
+  }
+  .card-text{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+  }
+  .card-text:hover{
+   color: red;
+  }
+  @media screen and (max-width: 992px){
+  
+    .all{
+      width: 100%;
+      height: 500px;
+    }
+    .flex-container {
+    display: flex;
+  
+  }
+  }
+
+  /* atm form */
+  #modal-content{
+    background-color: transparent;
+    border: none; /* Optional: Removes the border */
+  }
+.btnn{
+  padding: 15px;
+
+}
+      
+
+      #card {
+        width: 280px;
+        height: 450px; /* Increased height to accommodate the new input */
+        position: relative;
+        transform-style: preserve-3d;
+        transition: transform 0.5s;
+        margin-bottom: 20px;
+      }
+
+      .card-face {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(darksalmon, rgb(12, 2, 5));
+        padding: 30px; /* Increased padding */
+      }
+
+      .card-face.front {
+        transform: rotateY(0deg);
+      }
+
+      .card-face.back {
+        transform: rotateY(180deg);
+      }
+
+      input {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        box-sizing: border-box;
+      }
+      .input {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        box-sizing: border-box;
+      }
+
+      .buttonn  {
+        background-color: #b15656;
+        color: white;
+        padding: 15px; /* Increased padding */
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .buttonnn{
+        background-color: #b15656;
+        color: white;
+        padding: 15px; /* Increased padding */
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .buttonn:hover {
+        background-color: #45a049;
+      }
+      .buttonnn:hover{
+        background-color: #45a049;
+      }
+
+
+      /* Modal styles */
+      .modall {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        z-index: 1;
+        text-align: center;
+      }
+      .modalll{
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        z-index: 1;
+        text-align: center;
+      }
+
+      #successsModal {
+        color: #4caf50;
+      }
+
+      #errorrModal {
+        color: #f44336;
+      }
+
+      /* Home icon */
+      #home-icon {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        cursor: pointer;
+      }
+      .sweety{
+        color: blue;
+      }
+      .smo{
+        background-color: rgb(233, 184, 112);
+      }
+      .smo:hover{
+        background-color: #4caf50;
+      }
+      .tup{
+        right: 100px;
+        position: relative;
+      }
