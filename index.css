@@ -10,7 +10,7 @@ body {
 }
 @keyframes colorChange {
   from {
-    background-color: #e7d2d2;
+    background-color: #beacac;
   }
   to {
     background-color: darksalmon;
@@ -105,7 +105,7 @@ h6 {
     box-shadow: 8 8 black;
     padding: 25px;
     margin: 10px;
-    background-color: darksalmon;
+    background-image: linear-gradient(darksalmon,rgb(34, 34, 52)); 
     border-radius: 10px;
   }
   .atmopen:hover{
@@ -129,6 +129,13 @@ h6 {
   }
   }
   @media screen and (max-width: 667px){
+  .cont .atmopen{
+    position: relative;
+   width: 50%;
+   height: 50px;
+  }
+  }
+  @media screen and (max-width: 467px){
   .cont .atmopen{
     position: relative;
    width: 50%;
